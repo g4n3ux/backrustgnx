@@ -7,6 +7,9 @@ edition = "2024"
 async-graphql = "7.2.1"
 async-graphql-axum = "7.2.1"
 axum = { version = "0.8.8", features = ["json"] }
+bcrypt = "0.19.0"
+chrono = { version = "0.4.44", features = ["serde"] }
 dotenvy = "0.15.7"
 serde = { version = "1.0.228", features = ["derive"] }
+sqlx = { version = "0.8.6", features = ["postgres", "runtime-tokio-rustls", "macros", "chrono"] }
 tokio = { version = "1.50.0", features = ["full"] }
